@@ -145,7 +145,7 @@
         radial-gradient(900px 600px at 20% 40%, rgba(201,169,97,.10), transparent 60%),
         radial-gradient(900px 600px at 80% 20%, rgba(139,58,26,.09), transparent 55%),
         linear-gradient(180deg, rgba(10,8,5,.22), rgba(10,8,5,.92)),
-        url("background.jpg");
+        url("bckg.jpg");
       background-size: cover;
       background-position: center;
       filter: contrast(1.02) saturate(.95);
@@ -227,6 +227,26 @@
         }
     .card img{ width:100%; border-radius:8px; margin-top:8px; }
 
+    /* Custom style for the Chargen Site link */
+    .chargen-link {
+      display: block;
+      text-align: center;
+      margin-top: 14px;
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: linear-gradient(45deg, #c9a961, #8b3a1a);
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      transition: filter .15s ease, transform .15s ease;
+    }
+    .chargen-link:hover {
+      filter: brightness(1.4);
+      transform: scale(1.05);
+    }
+
     /* utility for full-width feature images */
     .image-wrap{
       position:relative;
@@ -301,7 +321,7 @@
         <a class="button" href="#about2">About Us</a>
         <a class="button" href="#about">News</a>
         <a class="button" href="#about2">Community</a>
-        <a class="button" href="#shop">Shop</a>
+        <a class="button" href="#suggestions">Shop</a>
       </nav>
     </div>
   </header>
@@ -324,7 +344,6 @@
   </section>
 
   <main class="container">
-    <!-- intro text section matching About structure -->
     <section id="intro" class="panel" aria-label="Intro">
       <h2>Introduction</h2>
       <div class="rule"></div>
@@ -348,10 +367,8 @@ REGIO VIII throws you into a unique blend of gritty roleplaying and strategic ca
       </div>
     </section>
 
-    <!-- middle image -->
     <div class="image-wrap"><img src="middle.jpg" alt="" class="full-image" /></div>
 
-    <!-- original about section now after middle image -->
     <section id="about" class="panel" aria-label="About the book">
       <h2>Game engine</h2>
       <div class="rule"></div>
@@ -371,20 +388,19 @@ REGIO VIII throws you into a unique blend of gritty roleplaying and strategic ca
           <div class="card">
             <h3>News</h3>
             <img src="cards.jpg" alt="Cards" />
-            <p>New homepage is out!
+            <p>New homepage is out!</p>
             <p class="fell-english fell-small">Welcome to our new homepage!</p>
-            <p>New errate is on the way</p>
+            <p>New errata is on the way</p>
             <p class="fell-english fell-small">We are working on the Corebook new errata
-              <p>For more news and updates, follow us on our social media channels and join the community discussions!</p>
+                          <p class="fell-english fell-small">You can start generate characters vis Charge site - find the link below.</p>
+            <p>For more news and updates, follow us on our social media channels and join the community discussions!</p>
           </div>
         </aside>
       </div>
     </section>
 
-    <!-- low image -->
     <div class="image-wrap"><img src="low.jpg" alt="" class="full-image" /></div>
 
-    <!-- additional about-style section -->
     <section id="about2" class="panel" aria-label="Additional about">
       <h2>About Us</h2>
       <div class="rule"></div>
@@ -401,29 +417,28 @@ REGIO VIII throws you into a unique blend of gritty roleplaying and strategic ca
             <h3>Community</h3>
             <p>Join the Ranks</p>
             <p class="fell-english fell-small">Enter the Discord praetorium, the Reddit forum, or our YouTube archives to find inspiration and discuss the shadows of the Three Empires with a dedicated legion of players. Seek your comrades on Discord or find your next campaign on Tabletopia.</p>
-            <div class="community-socials">
             <div class="community-socials" style="display:flex; gap:14px; justify-content:center; align-items:center;">
               <a href="https://discord.gg/m8bsSuHNZw" target="_blank" aria-label="Discord" class="footer-social-link">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;">
                   <path d="M20.317 4.369a19.791 19.791 0 0 0-4.885-1.515.07.07 0 0 0-.073.035c-.211.375-.444.864-.608 1.249-1.844-.276-3.68-.276-5.506 0-.164-.393-.405-.874-.617-1.249a.07.07 0 0 0-.073-.035A19.736 19.736 0 0 0 3.677 4.369a.064.064 0 0 0-.03.027C.533 9.09-.32 13.579.099 18.021a.08.08 0 0 0 .028.056c2.052 1.507 4.042 2.422 5.992 3.029a.077.077 0 0 0 .084-.027c.461-.63.873-1.295 1.226-1.994a.076.076 0 0 0-.041-.104c-.652-.247-1.27-.549-1.872-.892a.077.077 0 0 1-.008-.127c.126-.094.252-.192.371-.291a.074.074 0 0 1 .077-.01c3.927 1.793 8.18 1.793 12.061 0a.073.073 0 0 1 .078.009c.12.099.245.198.372.292a.077.077 0 0 1-.006.127 12.298 12.298 0 0 1-1.873.891.076.076 0 0 0-.04.105c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028c1.961-.607 3.951-1.522 6.003-3.029a.077.077 0 0 0 .028-.055c.5-5.177-.838-9.637-3.548-13.625a.061.061 0 0 0-.03-.028zM8.02 15.331c-1.183 0-2.156-1.085-2.156-2.419 0-1.333.955-2.418 2.156-2.418 1.21 0 2.174 1.095 2.156 2.418 0 1.334-.955 2.419-2.156 2.419zm7.974 0c-1.183 0-2.156-1.085-2.156-2.419 0-1.333.955-2.418 2.156-2.418 1.21 0 2.174 1.095 2.156 2.418 0 1.334-.946 2.419-2.156 2.419z"/>
                 </svg>
               </a>
-              <a href="https://reddit.com/" target="_blank" aria-label="Reddit" class="footer-social-link">
+              <a href="https://reddit.com/r/REGIOVIII" target="_blank" aria-label="Reddit" class="footer-social-link">
                 <i class="fa fa-reddit"></i>
               </a>
-              <a href="https://youtube.com/" target="_blank" aria-label="YouTube" class="footer-social-link">
+              <a href="https://youtube.com/@REGIOVIII" target="_blank" aria-label="YouTube" class="footer-social-link">
                 <i class="fa fa-youtube"></i>
               </a>
-              <a href="https://facebook.com/" target="_blank" aria-label="Facebook" class="footer-social-link">
+              <a href="https://facebook.com/REGIOVIII" target="_blank" aria-label="Facebook" class="footer-social-link">
                 <i class="fa fa-facebook"></i>
               </a>
-              <a href="https://instagram.com/" target="_blank" aria-label="Instagram" class="footer-social-link">
+              <a href="https://instagram.com/REGIOVIII" target="_blank" aria-label="Instagram" class="footer-social-link">
                 <i class="fa fa-instagram"></i>
               </a>
               <a href="mailto:info@cardwired.com" aria-label="Email" class="footer-social-link">
                 <i class="fa fa-envelope"></i>
               </a>
-              <a href="https://tabletopia.com/" target="_blank" aria-label="Tabletopia" class="footer-social-link">
+              <a href="https://tabletopia.com/playground/regio-viii" target="_blank" aria-label="Tabletopia" class="footer-social-link">
                 <img src="tabletopialogo.svg" alt="Tabletopia" />
               </a>
             </div>
@@ -432,13 +447,17 @@ REGIO VIII throws you into a unique blend of gritty roleplaying and strategic ca
       </div>
     </section>
 
-    <!-- suggestions stay at end -->
     <section id="suggestions" class="panel" aria-label="Suggestions">
       <h2>The Toolkit</h2>
       <div class="rule"></div>
       <div class="suggestions">
                 <div class="card"><h3>Decks</h3><p>A 64-card unique deck! The rattling of dice is no more.</p><img src="cards.jpg" alt="Cards" class="deck-img" /></div>
-                <div class="card"><h3>Charactersheet</h3><p>One-page Charactersheet with the basic information and slots for the Pool Deck!" </p><img src="Karlap.jpg" alt="Charactersheet" class="deck-img" /></div>
+                <div class="card">
+                  <h3>Charactersheet</h3>
+                  <p>One-page Charactersheet with the basic information and slots for the Pool Deck!" </p>
+                  <img src="Karlap.jpg" alt="Charactersheet" class="deck-img" />
+                  <a href="CHRsheet8.html" class="chargen-link">CHARGEN SITE</a>
+                </div>
               <div class="card"><h3>Playmat & Tokens</h3><p>Universal Playmat-Bringing order to your tokens and decks.<img src="playmat.jpg" alt="Playmat & Tokens" class="deck-img" /></div>
       </div>
     </section>
@@ -453,22 +472,22 @@ REGIO VIII throws you into a unique blend of gritty roleplaying and strategic ca
             <path d="M20.317 4.369a19.791 19.791 0 0 0-4.885-1.515.07.07 0 0 0-.073.035c-.211.375-.444.864-.608 1.249-1.844-.276-3.68-.276-5.506 0-.164-.393-.405-.874-.617-1.249a.07.07 0 0 0-.073-.035A19.736 19.736 0 0 0 3.677 4.369a.064.064 0 0 0-.03.027C.533 9.09-.32 13.579.099 18.021a.08.08 0 0 0 .028.056c2.052 1.507 4.042 2.422 5.992 3.029a.077.077 0 0 0 .084-.027c.461-.63.873-1.295 1.226-1.994a.076.076 0 0 0-.041-.104c-.652-.247-1.27-.549-1.872-.892a.077.077 0 0 1-.008-.127c.126-.094.252-.192.371-.291a.074.074 0 0 1 .077-.01c3.927 1.793 8.18 1.793 12.061 0a.073.073 0 0 1 .078.009c.12.099.245.198.372.292a.077.077 0 0 1-.006.127 12.298 12.298 0 0 1-1.873.891.076.076 0 0 0-.04.105c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028c1.961-.607 3.951-1.522 6.003-3.029a.077.077 0 0 0 .028-.055c.5-5.177-.838-9.637-3.548-13.625a.061.061 0 0 0-.03-.028zM8.02 15.331c-1.183 0-2.156-1.085-2.156-2.419 0-1.333.955-2.418 2.156-2.418 1.21 0 2.174 1.095 2.156 2.418 0 1.334-.955 2.419-2.156 2.419zm7.974 0c-1.183 0-2.156-1.085-2.156-2.419 0-1.333.955-2.418 2.156-2.418 1.21 0 2.174 1.095 2.156 2.418 0 1.334-.946 2.419-2.156 2.419z"/>
           </svg>
         </a>
-        <a href="https://reddit.com/" target="_blank" aria-label="Reddit" class="footer-social-link">
+        <a href="https://reddit.com/r/REGIOVIII" target="_blank" aria-label="Reddit" class="footer-social-link">
           <i class="fa fa-reddit"></i>
         </a>
-        <a href="https://youtube.com/" target="_blank" aria-label="YouTube" class="footer-social-link">
+        <a href="https://youtube.com/@REGIOVIII" target="_blank" aria-label="YouTube" class="footer-social-link">
           <i class="fa fa-youtube"></i>
         </a>
-        <a href="https://facebook.com/" target="_blank" aria-label="Facebook" class="footer-social-link">
+        <a href="https://facebook.com/REGIOVIII" target="_blank" aria-label="Facebook" class="footer-social-link">
           <i class="fa fa-facebook"></i>
         </a>
-        <a href="https://instagram.com/" target="_blank" aria-label="Instagram" class="footer-social-link">
+        <a href="https://instagram.com/REGIOVIII" target="_blank" aria-label="Instagram" class="footer-social-link">
           <i class="fa fa-instagram"></i>
         </a>
         <a href="mailto:info@cardwired.com" aria-label="Email" class="footer-social-link">
           <i class="fa fa-envelope"></i>
         </a>
-        <a href="https://tabletopia.com/" target="_blank" aria-label="Tabletopia" class="footer-social-link">
+        <a href="https://tabletopia.com/playground/regio-viii" target="_blank" aria-label="Tabletopia" class="footer-social-link">
           <img src="tabletopialogo.svg" alt="Tabletopia" />
         </a>
       </div>
